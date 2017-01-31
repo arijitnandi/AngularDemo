@@ -5,7 +5,7 @@ import {CharactersComponent} from "./characters.component";
 import {CharacterListComponent} from "./character-list/character-list.component"
 
 const routes : Routes = [
-  {path: 'characters',
+  {path: '',
     component: CharactersComponent,
     children: [
       {path : '', component:CharacterListComponent},

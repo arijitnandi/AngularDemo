@@ -9,7 +9,7 @@ import {VehicleModule} from "./vehicles/vehicle.module";
 
 @NgModule({
   // AppRoutingModule should be the last import.As we have to load all the eagerly loaded modules first to navigate
-  imports:      [ BrowserModule, CharacterModule,VehicleModule,AppRoutingModule ],
+  imports:      [ BrowserModule, VehicleModule,AppRoutingModule ],
   declarations: [ AppComponent,PageNotFoundComponent ],
   bootstrap:    [ AppComponent ]
 })
