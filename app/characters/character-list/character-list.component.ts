@@ -21,6 +21,10 @@ export class CharacterListComponent implements OnInit{
     ngOnInit() : any {
       this.getCharacters();
     }
+
+  refreshData(){
+      this.getCharacters();
+  }
   }
 
 
