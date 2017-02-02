@@ -6,6 +6,7 @@ import {AppRoutingModule, routeComponents} from "./app-routing.module";
 import {CharacterModule} from "./characters/character.module";
 import {PageNotFoundComponent} from "./page-not-found.component";
 import {VehicleModule} from "./vehicles/vehicle.module";
+import './shared/rxjs-extensions';
 
 @NgModule({
   // AppRoutingModule should be the last import.As we have to load all the eagerly loaded modules first to navigate

@@ -6,7 +6,7 @@ import {Character} from "../shared/character.model";
   moduleId: module.id,
   selector: 'character-list',
   templateUrl: 'character-list.component.html',
-  providers: [CharacterService]
+  styleUrls:['character-list.component.scss']
 })
 export class CharacterListComponent implements OnInit{
 

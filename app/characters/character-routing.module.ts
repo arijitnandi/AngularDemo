@@ -3,13 +3,14 @@ import {NgModule} from "@angular/core";
 import {RouterModule, Routes} from "@angular/router";
 import {CharactersComponent} from "./characters.component";
 import {CharacterListComponent} from "./character-list/character-list.component"
+import {CharacterComponent} from "./character/character.component";
 
 const routes : Routes = [
   {path: '',
     component: CharactersComponent,
     children: [
       {path : '', component:CharacterListComponent},
-      // {path : ':id', component: CharacterComponent}
+      {path : ':id', component: CharacterComponent}
     ]
   },
 
@@ -24,5 +25,6 @@ export class CharacterRoutingModule{
 
 export const characterRoutedComponents = [
  CharactersComponent,
-  CharacterListComponent
+  CharacterListComponent,
+  CharacterComponent
 ];
