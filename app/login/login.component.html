@@ -1,0 +1,4 @@
+<div>
+  <button *ngIf="!isUserLoggedin" (click)="loginUser()">Login</button>
+  <button *ngIf="isUserLoggedin" (click)="logoutUser()">Logout</button>
+</div>

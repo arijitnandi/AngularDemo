@@ -2,7 +2,7 @@ import {NgModule} from "@angular/core";
 import {RouterModule, Routes, PreloadAllModules} from "@angular/router";
 import {CanActivateAuthGuard} from './shared/can-activate.service';
 import {PageNotFoundComponent} from "./page-not-found.component"
-import {LoginComponent} from "./core/login.component";
+import {LoginComponent} from "./login/login.component";
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'vehicles'},
