@@ -8,7 +8,7 @@ import {Vehicle} from "../shared/vehicle.model";
   providers: [VehicleService]
 })
 export class VehicleListComponent implements OnInit{
-
+  blnDisplayHeading : boolean = true;
   vehicles : Vehicle[];
   constructor(private _vehicleService : VehicleService){}
 
@@ -19,5 +19,9 @@ export class VehicleListComponent implements OnInit{
 
   ngOnInit() : any{
     this.getVehicles();
+  }
+
+  toggleHeading(){
+    this.blnDisplayHeading = !this.blnDisplayHeading;
   }
 }

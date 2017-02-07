@@ -1,6 +1,10 @@
-<h1>This is vehicle list</h1>
+<h1 *myDelete= blnDisplayHeading>This is vehicle list</h1>
 <ul>
   <li *ngFor="let vehicle of vehicles">
     <a href="" [routerLink]="[vehicle.id]">{{vehicle.name}}</a>
   </li>
 </ul>
+
+<button (click)="toggleHeading();">Toggle Heading</button>
+
+<p myHidden>**This is Admin note</p>

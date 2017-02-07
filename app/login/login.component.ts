@@ -2,7 +2,7 @@
 import {Component} from "@angular/core";
 import {LoginService} from "./login.service";
 import {UserProfileService} from "../shared/user-profile.service";
-import {ActivatedRoute, Router, __router_private__} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 @Component({
   moduleId: module.id,
   templateUrl: 'login.component.html',
@@ -20,7 +20,7 @@ export class LoginComponent{
   loginUser(){
     this._loginService.login();
     this.isUserLoggedin = true;
-    let navigationUrl = this._activatedRoute.snapshot.queryParams['redirectTo']
+    let navigationUrl = this._activatedRoute.snapshot.queryParams['redirectTo'];
     this._router.navigate([navigationUrl]);
   }
 

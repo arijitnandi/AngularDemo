@@ -1,4 +1,4 @@
-<h1>{{name}}</h1>
-<a [routerLink]="['/characters']">Characters</a>
+<h1 myHidden>{{name}}</h1>
+<a [routerLink]="['/characters']" routerLinkActive="active-link">Characters</a>
 <a [routerLink]="['/vehicles']">Vehicles</a>
 <router-outlet></router-outlet>
